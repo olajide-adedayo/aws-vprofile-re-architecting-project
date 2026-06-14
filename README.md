@@ -4,10 +4,12 @@ End-to-End Cloud Migration and Re-Architecture using AWS Managed Services, Load 
 
 ## 📌 Project Overview
 
-This project demonstrates the re-architecture of a multi-tier Java-based web application (vProfile) on AWS cloud infrastructure using scalable and highly available services.
+This project demonstrates the re-architecture of the vProfile application from a traditional infrastructure deployment model to a modern AWS-managed architecture.
 
-The application was deployed using AWS Elastic Beanstalk and enhanced with additional AWS services to simulate a real-world production environment.
+The goal was to improve scalability, availability, performance, and operational efficiency by leveraging AWS managed services instead of relying solely on self-managed infrastructure.
 
-The architecture focuses on scalability, high availability, fault tolerance, and performance optimization using AWS managed services.
+The application was deployed using AWS Elastic Beanstalk and integrated with supporting services including Amazon RDS, Amazon ElastiCache (Memcached), Amazon MQ (RabbitMQ), Application Load Balancer (ALB), Auto Scaling, and Amazon CloudFront.
 
-The final deployment was integrated with CloudFront to improve global content delivery and reduce latency for users across different geographic regions.
+As part of the project, I also performed troubleshooting and root cause analysis to resolve a CloudFront 504 Gateway Timeout error caused by a protocol mismatch between CloudFront and the application origin.
+
+This project provided hands-on experience with cloud architecture design, deployment automation, traffic management, caching, application delivery, and production-style troubleshooting on AWS.
