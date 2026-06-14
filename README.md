@@ -118,3 +118,33 @@ The project was implemented using the following deployment workflow:
 - Verified application functionality.
 - Tested application accessibility through CloudFront.
 - Confirmed successful communication between all application components.
+
+## 📸 Project Screenshots
+
+### CloudFront Login Page
+
+![CloudFront Login Page](screenshots/01-CloudFront-Login-Page.png)
+
+### CloudFront Distribution
+
+![CloudFront Distribution](screenshots/02-CloudFront-Distribution.png)
+
+### Elastic Beanstalk Environment
+
+![Elastic Beanstalk Environment](screenshots/03-ElasticBeanstalk-Environment.png)
+
+### Deployment Success Events
+
+![Deployment Success Events](screenshots/04-Deployment-Success-Events.png)
+
+### CloudFront Origin Configuration
+
+![CloudFront Origin](screenshots/05-CloudFront-Origin.png)
+
+### Application Load Balancer Listener
+
+![ALB Listener](screenshots/06-ALB-Listener.png)
+
+### Amazon RDS Database
+
+![RDS Database](screenshots/07-RDS-Database.png)
