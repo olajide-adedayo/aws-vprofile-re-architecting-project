@@ -1,5 +1,10 @@
 # AWS Re-Architecting Project (vProfile Application)
 
+![Project Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![AWS](https://img.shields.io/badge/AWS-Cloud-orange)
+![DevOps](https://img.shields.io/badge/DevOps-Project-blue)
+
+
 End-to-End Cloud Migration and Re-Architecture using AWS Managed Services, Load Balancing, and Global Content Delivery Network (CloudFront)
 
 ## 📌 Project Overview
@@ -119,6 +124,12 @@ The project was implemented using the following deployment workflow:
 - Tested application accessibility through CloudFront.
 - Confirmed successful communication between all application components.
 
+## 🧩 Architecture Diagram
+
+> The architecture diagram illustrates how AWS services interact in a multi-tier cloud environment.
+
+(The architecture image will be added here later)
+
 ## 📸 Project Screenshots
 
 ### CloudFront Login Page
@@ -214,3 +225,10 @@ This project demonstrates a complete end-to-end AWS re-architecture of a traditi
 It highlights practical DevOps skills including cloud deployment, infrastructure configuration, service integration, performance optimization, and troubleshooting.
 
 The experience gained from this project forms a strong foundation for advanced DevOps practices such as CI/CD pipelines, Infrastructure as Code (Terraform/CloudFormation), containerization (Docker), and Kubernetes orchestration.
+
+
+## 👤 Author
+
+*Name:* Olajide Adedayo  
+*GitHub:* [olajide-adedayo](https://github.com/olajide-adedayo)  
+*Project:* AWS Re-Architecting (vProfile Application)
