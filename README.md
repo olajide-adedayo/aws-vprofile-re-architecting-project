@@ -37,3 +37,18 @@ The key objectives of this project were:
 - Deliver content globally using Amazon CloudFront.
 - Gain hands-on experience with production-style AWS architecture.
 - Perform real-world troubleshooting and root cause analysis.
+
+## 🛠️ AWS Services Used
+
+| Service | Purpose |
+|----------|----------|
+| Amazon Elastic Beanstalk | Application deployment and environment management |
+| Amazon EC2 | Compute resources for application hosting |
+| Auto Scaling Group (ASG) | Automatic scaling of application instances |
+| Application Load Balancer (ALB) | Traffic distribution across application instances |
+| Target Group | Routes requests from the ALB to healthy application instances |
+| Amazon RDS (MySQL) | Managed relational database service |
+| Amazon ElastiCache (Memcached) | In-memory caching layer for improved application performance |
+| Amazon MQ (RabbitMQ) | Managed message broker for application communication |
+| Amazon CloudFront | Global content delivery network (CDN) |
+| Security Groups | Network-level access control and security |
