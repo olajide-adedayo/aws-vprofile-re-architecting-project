@@ -191,3 +191,26 @@ This mismatch prevented CloudFront from successfully establishing a connection t
 - Application became accessible globally through CDN
 - 504 Gateway Timeout error was resolved
 - Improved application response performance through edge caching
+
+
+## 📘 Key Learnings
+
+This project provided hands-on experience in designing and deploying a multi-tier cloud architecture on AWS.
+
+Key learnings include:
+
+- Understanding of AWS Elastic Beanstalk for simplified application deployment and management.
+- Practical experience with Application Load Balancer (ALB) and Target Groups for traffic distribution.
+- Implementation of scalable infrastructure using Auto Scaling Groups.
+- Integration of managed AWS services such as RDS, ElastiCache, and Amazon MQ.
+- Hands-on experience with CloudFront CDN for global content delivery optimization.
+- Real-world troubleshooting of network and protocol-related issues in distributed systems.
+- Strengthened understanding of cloud architecture design principles including scalability, availability, and fault tolerance.
+
+- ## 🚀 Conclusion
+
+This project demonstrates a complete end-to-end AWS re-architecture of a traditional web application into a scalable, highly available, and cloud-optimized system.
+
+It highlights practical DevOps skills including cloud deployment, infrastructure configuration, service integration, performance optimization, and troubleshooting.
+
+The experience gained from this project forms a strong foundation for advanced DevOps practices such as CI/CD pipelines, Infrastructure as Code (Terraform/CloudFormation), containerization (Docker), and Kubernetes orchestration.
