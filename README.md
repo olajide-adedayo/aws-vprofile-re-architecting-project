@@ -148,3 +148,46 @@ The project was implemented using the following deployment workflow:
 ### Amazon RDS Database
 
 ![RDS Database](screenshots/07-RDS-Database.png)
+
+
+## ⚠️ Troubleshooting & Root Cause Analysis
+
+During the implementation of the CloudFront integration, the application encountered a *504 Gateway Timeout error* when accessed through the CloudFront distribution.
+
+### 🔍 Problem Observed
+
+- The application worked correctly when accessed directly via the Elastic Beanstalk URL.
+- However, when accessed through CloudFront, the request failed with a 504 Gateway Timeout error.
+
+### 🧪 Investigation Process
+
+The following components were analyzed during troubleshooting:
+
+- CloudFront distribution configuration
+- Origin settings (Elastic Load Balancer)
+- Application Load Balancer target group health
+- Security group rules
+- Protocol configuration between CloudFront and origin
+
+### 🧠 Root Cause
+
+The issue was caused by a *protocol mismatch between CloudFront and the Elastic Load Balancer origin*.
+
+- CloudFront was configured to communicate using HTTPS.
+- The origin (ALB/Beanstalk) was serving traffic over HTTP only.
+
+This mismatch prevented CloudFront from successfully establishing a connection to the origin, resulting in a timeout.
+
+### 🛠️ Solution Implemented
+
+- Updated CloudFront origin protocol policy to *HTTP only*
+- Ensured ALB listener was correctly configured on port 80 (HTTP)
+- Verified target group health checks were passing
+- Redeployed CloudFront distribution configuration
+
+### ✅ Result
+
+- CloudFront successfully connected to the origin
+- Application became accessible globally through CDN
+- 504 Gateway Timeout error was resolved
+- Improved application response performance through edge caching
