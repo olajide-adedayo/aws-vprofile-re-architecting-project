@@ -52,3 +52,25 @@ The key objectives of this project were:
 | Amazon MQ (RabbitMQ) | Managed message broker for application communication |
 | Amazon CloudFront | Global content delivery network (CDN) |
 | Security Groups | Network-level access control and security |
+
+## 🏗️ Solution Architecture
+
+The re-architected vProfile application was deployed using AWS managed services to provide scalability, availability, and improved operational efficiency.
+
+### Architecture Flow
+
+User Request
+→ Amazon CloudFront (CDN)
+→ Application Load Balancer (ALB)
+→ Elastic Beanstalk Environment
+→ EC2 Application Instances (Tomcat 10 + Corretto 17)
+→ Amazon RDS (MySQL)
+
+Supporting Services:
+
+- Amazon ElastiCache (Memcached) for application caching
+- Amazon MQ (RabbitMQ) for messaging and asynchronous communication
+- Auto Scaling Group (ASG) for dynamic scaling of application instances
+- Security Groups for controlled network access
+
+This architecture enables efficient traffic distribution, improved application performance, reduced latency for global users, and simplified infrastructure management through AWS managed services.
