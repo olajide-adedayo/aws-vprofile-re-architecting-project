@@ -74,3 +74,47 @@ Supporting Services:
 - Security Groups for controlled network access
 
 This architecture enables efficient traffic distribution, improved application performance, reduced latency for global users, and simplified infrastructure management through AWS managed services.
+
+## ⚙️ Project Deployment Workflow
+
+The project was implemented using the following deployment workflow:
+
+### 1. Application Preparation
+- Prepared the vProfile Java web application package (.war).
+- Verified application dependencies and configuration requirements.
+
+### 2. Elastic Beanstalk Environment Creation
+- Created an AWS Elastic Beanstalk environment.
+- Selected Tomcat 10 running on Amazon Corretto 17.
+- Configured environment settings and application deployment options.
+
+### 3. Database Integration
+- Provisioned an Amazon RDS MySQL database.
+- Configured database connectivity between the application and RDS.
+- Applied security group rules to allow controlled communication.
+
+### 4. Caching Layer Integration
+- Provisioned Amazon ElastiCache using Memcached.
+- Configured the application to utilize the caching service.
+
+### 5. Messaging Service Integration
+- Provisioned Amazon MQ (RabbitMQ).
+- Configured messaging services required by the application.
+
+### 6. Traffic Management
+- Utilized Application Load Balancer (ALB) and Target Groups.
+- Configured health checks and traffic routing.
+
+### 7. Scalability Configuration
+- Enabled Auto Scaling to support dynamic workload requirements.
+- Verified scaling and load balancing functionality.
+
+### 8. Content Delivery Optimization
+- Created an Amazon CloudFront distribution.
+- Configured CloudFront to use the Application Load Balancer as the origin.
+- Validated global content delivery and application accessibility.
+
+### 9. Validation and Testing
+- Verified application functionality.
+- Tested application accessibility through CloudFront.
+- Confirmed successful communication between all application components.
